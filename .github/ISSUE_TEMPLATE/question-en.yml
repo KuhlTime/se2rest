@@ -12,14 +12,20 @@ body:
     id: email
     attributes:
       label: Contact Details
-      description: How can we get in touch with you if we need more info? Please enter your HSD-Adress
+      description: How can we get in touch with you if we need more info? Please enter your HSD-Address
       placeholder: ex. firstname.lastname@study.hs-duesseldorf.de
     validations:
       required: true
+  - type: input
+    id: passage-id
+    attributes:
+      label: The passage identifier
+      description: If you have a question about a certain section inside the instruction enter the passage number below.
+      placeholder: ex. 3.2.2
   - type: textarea
     id: description
     attributes:
-      label: What happened?
+      label: What is your question?
       description: Also tell us, what did you expect to happen?
       placeholder: Tell us what you see!
       value: "A bug happened!"
